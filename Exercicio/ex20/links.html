@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* seletores personalizados
+  #  = id
+  .  = class
+  :  = pseudo-class
+  :: = pseudo-element
+  >  = children-filho */
+
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+        }
+        
+           div:hover > p {
+            color: rgb(27, 27, 27);
+            display: block;
+            width: 300px;
+            background-color: rgb(255, 102, 0);
+
+           }
+    
+     h1:hover {
+        color: blue;
+        text-decoration: underline;
+        
+}
+        
+a {   /* configuração da minha ancora-link */
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {  /* configuração se o site ja foi visitado*/
+    color:darkred
+}
+a:hover {/* quando passar o mouse em cima ficara do jeito que configurar*/
+    color: black;
+    text-decoration: underline;
+
+ }
+ a:active {/* essa opçao é pra quando clicar o mouse em cima ,ele muda de cor*/
+    color: yellow;
+ }
+ a::before{/* Essa opção se eu quizer avisar que é um link e também posso pernalizar,posso colocar simbolos tambem*/
+    content: '⇒';
+    color: black;
+ }
+
+ a::after{
+    content: '⇐';
+    color: black;
+
+ }
+ 
+    </style>
+</head>
+<body>
+ 
+       <div><h1>Personalizando links</h1>
+      
+       <p>Olha os links abaixo</p></div>
+
+   
+    <ul>
+<li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio Github</a></li>
+<li><a href="https://youtube.com/cursoemvideo/" target="-blank">Canal do Youtube</a></li>
+<li><a href="https://cursoemvideo.com" target="_blank">Site do curdoemVideo</a></li>
+
+     
+
+
+    </ul>
+    
+</body>
+</html>

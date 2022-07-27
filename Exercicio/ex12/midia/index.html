@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML</title>
+</head>
+<body>
+    <h1>Teste de vídeo</h1>
+    <p>Este vídeo está hospedado mo meu próprio servidor.</p> <!--Não é indicado colocar video no próprio servidor ,pois pode gerarm um custo maior devido ao trafico de dados,exeto se o cliente fazer questão-->
+    <video src="meuvideo.mp4" width="500" controls></video> <!--Primeiro exemplo de colocar video de uma forma mais simples-->
+
+    <P>Outra forma com source</P> <!-- Outra forma-->
+    <video width="500" poster="imagem/neve.png" controls> <!-- width vai indicar a largura que o video vai ter na tela...controls vai configurar se os controles do video vão aparecer e poster configura uma imagem que vai aparecer como uma capa ,enquanto o visitante não apertatr o play-->
+<source src="meuvideo.mp4" type="video/mp4">
+<!--Abaixo é um exemplo de outros formatos de videos que devem ser colocados ,pois nem todos os navegadores abrem o mesmo formato-->
+<source src="meuvideo.webm" type="video/webm">
+<source src="meuvideo.ogv" type="video/ogg"> </video>
+
+<h1>Inserindo vídeos do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h1>Inserindo vídeos do Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/35866494?h=7ea91a8058&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</video>
+</body>
+</html>
