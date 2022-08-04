@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        width: 400px;
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    td.td01 {
+        background-color: blue;
+    }
+    td.td03 {
+        background-color: blueviolet;
+    }
+    tr.linha1 {
+        background-color: aqua;
+    }
+    tr.linha2 {
+        background-color: pink;
+    }
+</style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hierarquia de tabelas (simples)
+        Table = tabela
+        Table Row = Linha de tabela (<TR>)
+               Table Header = Cabeçalho de tabela
+               Table Data = Dado de tabela (<td>)
+    -->
+    <table>
+
+        <tr class="linha1"> <!--Primeira linha-->
+           <td>A1</td>
+           <td>B1</td>
+           <td>C1</td>
+
+        </tr>
+
+        <tr class="linha2"> <!--Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr> <!--terceira linha-->
+            <td class="td01">A3</td>
+            <td class="td03">B3</td>
+            <td class="td01">C3</td>
+        </tr>
+
+        <tr class="linha1"> <!--Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+          
+        </tr>
+
+    </table>
+    
+</body>
+</html>
